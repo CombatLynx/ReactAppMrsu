@@ -1,10 +1,12 @@
 import React from "react";
 import classes from "./Navbar.module.css";
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return (
         <div className={classes.component}>
-            <h1>Navbar</h1>
+            <li><NavLink to="/myPosts">MyPosts</NavLink></li>
+            <li><NavLink to="/header">Header</NavLink></li>
         </div>
     );
 }

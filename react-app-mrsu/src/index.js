@@ -3,11 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+
+const state = {
+    messages: [
+        {
+            id: 1,
+            message: 'Hi, sdasd',
+            countLikes: 12
+        },
+        {
+            id: 2,
+            message: 'Hi, sdasd',
+            countLikes: 12
+        }
+    ]
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+        <App state={state}/>
+      </BrowserRouter>
   </React.StrictMode>
 );
 

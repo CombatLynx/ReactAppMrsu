@@ -3,7 +3,7 @@ import classes from "./Header.module.css";
 
 const Header = () => {
     return (
-        <div className={classes.component}>
+        <div>
             <h1>Header</h1>
         </div>
     );
