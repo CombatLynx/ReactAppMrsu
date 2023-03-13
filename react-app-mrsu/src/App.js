@@ -5,14 +5,22 @@ import MyPosts from "./components/MyPosts/MyPosts";
 import {Route, Routes} from "react-router-dom";
 
 const App = (props) => {
+    console.log(props)
     return (
         <div className="app-wrapper">
-            <h1>App component</h1>
-            <Navbar></Navbar>
-            <Routes>
-                <Route path='/myPosts' element={<MyPosts messages={props.state.messages}></MyPosts>}></Route>
-                <Route path='/header' element={<Header/>}></Route>
-            </Routes>
+            <div className="app-wrapper__container">
+                <Header/>
+                <Navbar></Navbar>
+                <div className="app-wrapper__content">
+                    <Routes>
+                        <Route path='/myPosts' element={<MyPosts
+                            messages={props.state.messages}
+                           />}>
+                        </Route>
+                        <Route path='/header' element={<Header/>}></Route>
+                    </Routes>
+                </div>
+            </div>
         </div>
     );
 }

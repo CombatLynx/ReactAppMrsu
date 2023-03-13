@@ -1,3 +1,4 @@
 .component {
-    color: blue;
+    grid-area: n;
+    background: yellow;
 }

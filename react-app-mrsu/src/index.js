@@ -9,13 +9,13 @@ const state = {
     messages: [
         {
             id: 1,
-            message: 'Hi, sdasd',
+            message: 'Hi, Misha',
             countLikes: 12
         },
         {
             id: 2,
-            message: 'Hi, sdasd',
-            countLikes: 12
+            message: 'Hi, Masha',
+            countLikes: 23
         }
     ]
 }

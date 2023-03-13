@@ -1,3 +1,4 @@
-.component {
-    color: red;
+.header {
+    grid-area: h;
+    background: blueviolet;
 }
