@@ -1,8 +1,8 @@
 import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import MyPosts from "./components/MyPosts/MyPosts";
 import {Route, Routes} from "react-router-dom";
+import MyPostsContainer from "./components/MyPosts/MyPostsContainer";
 
 const App = (props) => {
     console.log(props)
@@ -13,11 +13,8 @@ const App = (props) => {
                 <Navbar></Navbar>
                 <div className="app-wrapper__content">
                     <Routes>
-                        <Route path='/myPosts' element={<MyPosts
-                            messages={props.state.messages}
-                           />}>
-                        </Route>
-                        <Route path='/header' element={<Header/>}></Route>
+                        <Route path='/myPosts' element={<MyPostsContainer store={props.store}/>}/>
+                        <Route path='/header' element={<Header/>}/>
                     </Routes>
                 </div>
             </div>
