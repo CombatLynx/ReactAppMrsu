@@ -1,8 +1,8 @@
-import React from "react";
+import React, {FC} from "react";
 import classes from "./Navbar.module.css";
 import {NavLink} from "react-router-dom";
 
-const Navbar = () => {
+const Navbar: FC = () => {
     return (
         <div className={classes.component}>
             <li><NavLink to="/myPosts">MyPosts</NavLink></li>
