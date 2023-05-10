@@ -7,6 +7,7 @@ const Navbar: FC = () => {
         <div className={classes.component}>
             <li><NavLink to="/myPosts">MyPosts</NavLink></li>
             <li><NavLink to="/header">Header</NavLink></li>
+            <li><NavLink to="/users">Users</NavLink></li>
         </div>
     );
 }
